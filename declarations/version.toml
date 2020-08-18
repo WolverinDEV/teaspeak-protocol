@@ -1,0 +1,6 @@
+# In general all patch versions should be compatible to each other.
+# Minor changes may cause some compatibility issues and major versions will cause some compatibility issues
+[[protocol-version]]
+major=1
+minor=2
+patch=0

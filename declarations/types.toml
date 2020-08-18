@@ -1,0 +1,222 @@
+# The basic, primative, types.
+# For the generators, these types have to be declared by their own
+[[type]]
+id = "bool"
+desc = "A value which could be zero or one"
+
+[[type]]
+id = "u8"
+desc = "An unsigned interger ranging from [0; 255]"
+
+[[type]]
+id = "u16"
+desc = "An unsigned interger ranging from [0; 65536]"
+
+[[type]]
+id = "u32"
+desc = "An unsigned interger ranging from [0; 2^32]"
+
+[[type]]
+id = "u64"
+desc = "An unsigned interger ranging from [0; 2^64]"
+
+[[type]]
+id = "i8"
+desc = "An signed interger ranging from [-128; 127]"
+
+[[type]]
+id = "i16"
+desc = "An signed interger ranging from [-32768; 32767]"
+
+[[type]]
+id = "i32"
+desc = "An signed interger ranging from [-2^31; 2^31-1]"
+
+[[type]]
+id = "i64"
+desc = "An signed interger ranging from [-2^63; 2^63-1]"
+
+[[type]]
+id = "str"
+desc = "A string"
+
+[[type]]
+id = "f32"
+desc = "A 32 bit floating point value"
+
+# All types, which are just a "reference" to a primative type
+# ref = <target type/enum name>
+# ref-type = [enum|type]
+[[type-ref]]
+id = "ChannelId"
+desc = "The id of a channel"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "ClientId"
+desc = "The id of a client"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "ClientDbId"
+desc = "The id of a client in the data base"
+ref = "u64"
+ref-type = "type"
+
+[[type-ref]]
+id = "ServerGroupId"
+desc = "The id of a server group"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "ChannelGroupId"
+desc = "The id of a channel group"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "Codec"
+desc = "The codec enum"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "ClientType"
+desc = "The client type enum"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "DurationSeconds"
+desc = "A duration in seconds"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "DurationMilliseconds"
+desc = "A duration in milliseconds"
+ref = "u64"
+ref-type = "type"
+
+[[type-ref]]
+id = "IconHash"
+desc = "The crc32 hash of an icon"
+ref = "u32"
+ref-type = "type"
+
+[[type-ref]]
+id = "Uid"
+desc = "The unique id of the client"
+ref = "str"
+ref-type = "type"
+
+[[type-ref]]
+id = "Reason"
+desc = "The reason for the event"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "ChannelPermissionHint"
+desc = "A bit mask indicating if the client has certain permissions"
+ref = "u64"
+ref-type = "type"
+
+[[type-ref]]
+id = "ClientPermissionHint"
+desc = "A bit mask indicating if the client has certain permissions"
+ref = "u64"
+ref-type = "type"
+
+[[type-ref]]
+id = "DateTime"
+desc = "Time since epoch in ??"
+ref = "u64"
+ref-type = "type"
+
+[[type-ref]]
+id = "PermissionId"
+desc = "ID of a permission"
+ref = "i32"
+ref-type = "type"
+
+[[type-ref]]
+id = "PermissionType"
+desc = "The type of the permission"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "Ts3ErrorCode"
+desc = "An ID describing an error"
+ref = "u16"
+ref-type = "type"
+
+[[type-ref]]
+id = "CodecEncryptionMode"
+desc = "The encryption mode"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "GroupType"
+desc = "The group type"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "GroupNamingMode"
+desc = "The group naming type"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "HostMessageMode"
+desc = "The host message mode"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "HostBannerMode"
+desc = "The host banner mode"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "IpAddr"
+desc = "The targets IP address"
+ref = "str"
+ref-type = "type"
+
+[[type-ref]]
+id = "LicenseType"
+desc = "The license type"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "TextMessageTargetMode"
+desc = "The target text messaging mode"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "TokenType"
+desc = "The token type"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "PluginTargetMode"
+desc = "The plugin target type"
+ref = "u8" # TODO: generate the enum!
+ref-type = "type"
+
+[[type-ref]]
+id = "LogLevel"
+desc = "The log level"
+ref = "str"
+ref-type = "type"
